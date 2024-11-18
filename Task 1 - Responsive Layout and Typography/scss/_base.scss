@@ -1,0 +1,24 @@
+@use "./variables" as var;
+@use "./mixins" as m;
+
+* {
+    box-sizing: border-box;
+    @include m.default();
+}
+
+body {
+    @include m.default();
+    background-color: var.$page-bg;
+    font-family: var.$body-font; 
+    font-size: var.$body-size;
+}
+
+h1, h2 {
+    font-size: var.$heading-size;
+    font-family: var.$heading-font;
+    text-align: center;
+}
+
+h1, h2, p {
+    margin: var.$small-spacing;
+}
