@@ -1,0 +1,25 @@
+@use "./variables" as var;
+@use "./mixins" as m;
+
+.logo, nav {
+    display: flex;
+    align-items: center;
+    margin: var.$small-spacing;
+}
+
+.logo {
+    justify-content: center;
+
+    img {
+        width: var.$default-logo;
+    }
+}
+
+nav {
+    justify-content: space-around;
+
+    a {
+        color: var.$body-color; 
+        text-decoration: none;
+    }
+}    
