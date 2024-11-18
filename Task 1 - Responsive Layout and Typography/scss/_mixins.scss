@@ -1,0 +1,12 @@
+@use "./variables" as var;
+
+@mixin default() {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin footer-style() {
+    background-color: var.$footer-bg;
+    color: var.$footer-color;
+    text-align: center;
+}
