@@ -1,0 +1,36 @@
+// BACKGROUND COLORS
+$content-bg: white;
+$page-bg: #E9E9E9;
+$footer-bg: #14181D;
+
+// COLORS
+$body-color: black; 
+$footer-color: whitesmoke;
+
+// STANDARD SPACING: paragraphs and headings do not have to use the standard spacing
+$small-spacing: 12px;
+$large-spacing: 20px;
+$tablet-spacing: 30px;
+$desktop-spacing: 50px;
+
+// IMAGE SIZES
+$author: 200px;
+$default-logo: 80px;
+$desktop-logo: 200px;
+
+// FONTS
+$heading-font: "Protest Guerrilla", serif;
+$body-font: "Josefin Sans", serif;
+
+// FONT SIZES
+$body-size: 1.05rem;
+$heading-size: 3.15rem;
+$main-info-size: 1.2rem;
+$desktop-h1: 6.3rem;
+$desktop-span: 2.4rem;
+
+/* FONT SIZE RULES: 
+1) Headings should be three times larger than the default font size
+2) On desktop, the title heading should be much larger, as shown in the wireframe.
+3) On desktop, the first paragraph should be a larger font.
+*/
