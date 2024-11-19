@@ -1,0 +1,27 @@
+@use "variables" as var;
+@use "colors" as c;
+
+@mixin default() {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex-SPB() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin link-style() {
+    text-decoration: none;
+    color: var.$blue;
+}
+
+@mixin button-style() {
+    padding: var.$small-spacing;
+    font-size: var.$button-size;
+    font-family: var.$button-font;
+    border-radius: var.$small-spacing;
+    @include c.highlights();
+    @include c.button-style();
+}
