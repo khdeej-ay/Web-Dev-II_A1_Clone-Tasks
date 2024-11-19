@@ -1,0 +1,25 @@
+@use "variables" as var;
+@use "colors" as c;
+@use "mixins" as m;
+
+header {
+    @include m.flex_SPB();
+    padding: var.$small-spacing;
+    @include c.highlights();
+
+    .logo {
+
+        a {
+            font-family: var.$heading-font;
+            font-size: var.$header-size-mobile;
+        }
+    }
+    
+    nav {
+        display: none;
+    }
+
+    .search {
+        padding: var.$small-spacing;
+    }
+}
