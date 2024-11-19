@@ -1,0 +1,21 @@
+@use "./variables" as var;
+@use "./mixins" as m;
+@use "./colors" as c;
+
+* {
+    box-sizing: border-box;
+    @include m.default();
+}
+
+body {
+    @include m.default();
+    font-family: var.$normal-font;
+}
+
+a {
+    @include m.link-style();
+}
+
+button {
+    @include m.button-style();
+}
