@@ -1,1 +1,179 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #231651;
+}
+
+button {
+  padding: 16px;
+  font-size: 2em;
+  font-family: "Teko", sans-serif;
+  border-radius: 16px;
+  border: 1px solid #4DCCBD;
+  color: #231651;
+  background-color: #EEF36A;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #4DCCBD;
+}
+header .logo a {
+  font-family: "Teko", sans-serif;
+  font-size: 2em;
+}
+header nav {
+  display: none;
+}
+header .search {
+  padding: 16px;
+}
+
+main {
+  margin: auto;
+  max-width: 900px;
+}
+main section {
+  margin: 16px 0;
+  border: 1px solid #4DCCBD;
+}
+main section img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #4DCCBD;
+}
+main section .content {
+  padding: 16px;
+}
+main section .content p {
+  font-size: 1.5em;
+  padding: 0 0 16px;
+  color: #231651;
+}
+main section .content button {
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  header {
+    box-shadow: 0px 12px #4DCCBD;
+  }
+  header .logo a {
+    font-size: 3em;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 32px;
+    padding: 32px;
+  }
+  main section {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 12px 12px #4DCCBD;
+    margin: 0;
+  }
+  main section .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  header .logo a {
+    font-size: 3em;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+  main {
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    padding: 48px;
+  }
+  main section {
+    width: 100%;
+  }
+  main section .content button {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .first, main .last {
+    grid-column: 1/3;
+  }
+  main .first .content {
+    display: flex;
+    flex-direction: row;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 16px;
+  }
+  main .first .content p {
+    padding: 0;
+  }
+  main .first .content button {
+    height: 100%;
+  }
+  main .first .poster {
+    height: 360px;
+  }
+  main .first .poster img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  main .side .poster {
+    height: 360px;
+  }
+  main .side .poster img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .last {
+    display: flex;
+    flex-direction: row;
+  }
+  main .last .content {
+    width: 120%;
+  }
+  main .last .poster {
+    position: relative;
+    width: 100%;
+  }
+  main .last .poster img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=style.css.map */
