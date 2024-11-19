@@ -1,0 +1,179 @@
+@use "scss/base";
+@use "scss/colors" as c;
+@use "scss/mixins" as m;
+@use "scss/variables" as var;
+
+@use "scss/header";
+
+main {
+    margin: auto;
+    max-width: var.$container-max-width;
+
+    section {
+        margin: var.$small-spacing 0; 
+        @include c.highlights();
+
+        img {
+            width: 100%;
+            height: auto;
+            border: 1px solid var.$cyan; 
+        }
+
+        .content {
+            padding: var.$small-spacing; 
+
+            p {
+                font-size: var.$movie-containers-size; 
+                padding: 0 0 var.$small-spacing; 
+                color: var.$blue; 
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// TABLET STYLING
+@media (min-width: 720px) {
+    
+    header {
+        @include c.header-shadow();
+
+        .logo {
+            a {
+                font-size: var.$header-size-tablet;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var.$large-tablet;
+        }
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: var.$large-tablet;
+        padding: var.$large-tablet;
+
+        section {
+            display: flex;
+            flex-direction: column;
+            // width: 42vw;
+            @include c.box-shadow();
+            margin: 0;
+
+            .content{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+// DESKTOP STYLING
+@media (min-width: 1024px) {
+
+    header {
+        .logo {
+            a {
+                font-size: var.$header-size-desktop;
+            }
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var.$large-desktop;
+        }
+    }
+    
+    main {
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var.$large-desktop;
+        padding: var.$large-desktop;
+
+        section {
+            width: 100%;
+
+            .content {
+                button {
+                    width: 100%;
+                    height: fit-content;
+                }
+            }
+        }
+
+        .first, .last {
+            grid-column: 1 / 3;
+        }
+
+        .first {
+            .content {
+                display: flex;
+                flex-direction: row;
+                height: fit-content;
+                gap: var.$small-spacing;
+
+                p {
+                    padding: 0;
+                }
+
+                button {
+                    height: 100%;
+                }
+            }
+
+            .poster {
+                height: 360px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+        }
+
+        .side {
+            .poster {
+                height: 360px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                } 
+            }
+        }
+
+        .last {
+            display: flex;
+            flex-direction: row;
+
+            .content {
+                width: 120%;
+            }
+
+            .poster {
+                position: relative; 
+                width: 100%; 
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                } 
+            }
+        }
+    } 
+}
