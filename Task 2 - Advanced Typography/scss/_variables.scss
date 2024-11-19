@@ -1,0 +1,38 @@
+
+// FONTS
+$heading-font: "Teko", sans-serif;
+$button-font: "Teko", sans-serif;
+$normal-font: "Lato", sans-serif;
+
+// FONT SIZING
+$button-size: 2em;
+$header-size-mobile: 2em;
+$header-size-tablet: 3em;
+$header-size-desktop: 3em;
+$movie-containers-size: 1.5em;
+
+// SPACING
+$small-spacing: 16px;
+$large-mobile: 16px;
+$large-tablet: 32px;
+$large-desktop: 48px;
+
+// The main content container should use _large_ spacing.
+// The movie content boxes should use _small_ spacing.
+// The header should use _large_ spacing between navigation options and use _small_ spacing elsewhere.
+// Buttons should use _small_ spacing and border radius.
+
+// BREAKPOINTS
+$mobile: 360px; //360-720
+$tablet: 720px; //720-1024
+$desktop: 1024px; //and up
+
+// COLORS
+$black: #070410; 
+$blue: #231651;
+$cyan: #4DCCBD;
+$yellow: #EEF36A;
+$white: #FFFFFF;
+
+// WIDTH
+$container-max-width: 900px;
