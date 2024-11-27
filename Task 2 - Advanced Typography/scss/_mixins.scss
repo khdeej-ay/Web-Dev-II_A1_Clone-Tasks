@@ -1,22 +1,27 @@
+// load the mixins and colors files
 @use "variables" as var;
 @use "colors" as c;
 
+// create a default mixin
 @mixin default() {
     margin: 0;
     padding: 0;
 }
 
+// create a mixin for flex space between styles
 @mixin flex-SPB() {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+// create a link styling mixin
 @mixin link-style() {
     text-decoration: none;
     color: var.$blue;
 }
 
+// create a button styling mixin
 @mixin button-style() {
     padding: var.$small-spacing;
     font-size: var.$button-size;
