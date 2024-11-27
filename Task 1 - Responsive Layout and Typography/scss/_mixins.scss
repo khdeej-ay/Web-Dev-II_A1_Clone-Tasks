@@ -1,10 +1,13 @@
+// load the variables file
 @use "./variables" as var;
 
+// create a default mixin
 @mixin default() {
     margin: 0;
     padding: 0;
 }
 
+// create a mixin for the footer styling
 @mixin footer-style() {
     background-color: var.$footer-bg;
     color: var.$footer-color;
