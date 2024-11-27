@@ -1,11 +1,14 @@
+// load the variables and mixins files
 @use "./variables" as var;
 @use "./mixins" as m;
 
+// style all the tags
 * {
     box-sizing: border-box;
     @include m.default();
 }
 
+// basic body styles
 body {
     @include m.default();
     background-color: var.$page-bg;
@@ -13,12 +16,14 @@ body {
     font-size: var.$body-size;
 }
 
+// basic heading styles
 h1, h2 {
     font-size: var.$heading-size;
     font-family: var.$heading-font;
     text-align: center;
 }
 
+// mobile-first spacings for headings and paragraph
 h1, h2, p {
     margin: var.$small-spacing;
 }
