@@ -124,7 +124,7 @@ footer {
 @media (min-width: 1024px) {
   body {
     width: 65%;
-    margin: auto auto;
+    margin: auto;
   }
   h1, h2, p {
     margin: 0;
@@ -168,7 +168,7 @@ footer {
     margin: 20px auto;
   }
   .images-grid {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
   }
   .images-grid img {
     width: 100%;
