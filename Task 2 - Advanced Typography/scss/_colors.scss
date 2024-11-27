@@ -1,17 +1,22 @@
+// load the variables file
 @use "variables" as var;
 
+// create a highlights mixin for movie boxes
 @mixin highlights() {
     border: 1px solid var.$cyan;
 }
 
+// create a header-shadow mixin for the header
 @mixin header-shadow() {
     box-shadow: 0px 12px var.$cyan;
 }
 
+// create a box-shadow mixin for movie boxes
 @mixin box-shadow() {
     box-shadow: 12px 12px var.$cyan;
 }
 
+// create a mixin for button styles
 @mixin button-style() {
     color: var.$blue;
     background-color: var.$yellow;
