@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>CSS Grid Quiz</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="quiz-body-container">
+
+        <!-- Quiz container -->
+        <div class="quiz-container">
+
+            <!-- Quiz header -->
+            <div class="quiz-header">
+                <h1>
+                    <span>
+                        <a href="../index.html">CSS Grid</a>
+                    </span> Quiz
+                </h1>
+            </div>
+
+            <!-- Question -->
+            <div class="question">Which property defines the number of columns in a grid?</div>
+
+            <!-- Answer options -->
+            <div class="options">
+
+                <!-- option 1 -->
+                <label>
+                    <input type="radio" name="question1" value="A">
+                    display-grid
+                </label>
+
+                <!-- option 2 -->
+                <label>
+                    <input type="radio" name="question1" value="B">
+                    grid-template-rows
+                </label>
+
+                <!-- option 3 -->
+                <label>
+                    <input type="radio" name="question1" value="C">
+                    grid-template-columns
+                </label>
+
+                <!-- option 4 -->
+                <label>
+                    <input type="radio" name="question1" value="D">
+                    align-items
+                </label>
+            </div>
+
+            <!-- Submit button -->
+            <button class="submit-btn" onclick="checkAnswer()">Submit</button>
+
+            <!-- result container -->
+            <div class="result" id="result"></div>
+        </div>    
+    </div>
+
+    <!-- link to script file -->
+    <script src="../script.js"></script>
+</body>
+</html>
