@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title for the page -->
+    <title>To-Do List</title>
+
+    <!-- link to the stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container to-do-container">
+
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html">
+                    FLBX
+                </a>
+            </div>
+            <!-- Navigation Links -->
+            <nav>
+                <a href="card.html">Features</a>
+                <a href="image.html">Images</a>
+                <a href="to-do.html">List</a>
+            </nav>
+            <!-- CTA Button -->
+            <div class="cta">
+                <button class="cta-button">
+                    <a href="quiz.html">Take a Quiz</a>
+                </button>
+            </div>
+        </header>
+
+        <!-- to do heading -->
+        <div class="header">
+            <h1>Flexbox To-Do List</h1>
+            <p>Organize your tasks efficiently!</p>
+        </div>
+
+        <!-- entry field to enter a new task and add it -->
+        <div class="todo-input">
+            <input type="text" id="todoInput" placeholder="Enter a new task">
+            <button id="addTodo">Add</button>
+        </div>
+
+        <!-- To do list -->
+        <div class="todo-list" id="todoList">
+            <!-- Tasks will appear here dynamically -->
+        </div>
+    </div>
+
+    <!-- link to the script file -->
+    <script src="../script.js"></script>
+</body>
+</html>
