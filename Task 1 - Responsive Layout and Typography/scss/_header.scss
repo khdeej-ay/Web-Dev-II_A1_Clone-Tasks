@@ -1,12 +1,15 @@
+// load the variables and mixins files
 @use "./variables" as var;
 @use "./mixins" as m;
 
+// style the logo and navigation links
 .logo, nav {
     display: flex;
     align-items: center;
     margin: var.$small-spacing;
 }
 
+// style the logo
 .logo {
     justify-content: center;
 
@@ -15,6 +18,7 @@
     }
 }
 
+// style the navigation links
 nav {
     justify-content: space-around;
 
