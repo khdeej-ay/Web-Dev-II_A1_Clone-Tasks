@@ -1,21 +1,26 @@
+// load the variables, mixins and colors
 @use "./variables" as var;
 @use "./mixins" as m;
 @use "./colors" as c;
 
+// style all tags
 * {
     box-sizing: border-box;
     @include m.default();
 }
 
+// style body tag
 body {
     @include m.default();
     font-family: var.$normal-font;
 }
 
+// basic style for links
 a {
     @include m.link-style();
 }
 
+// basic style for buttons
 button {
     @include m.button-style();
 }
