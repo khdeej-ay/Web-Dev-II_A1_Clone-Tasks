@@ -1,12 +1,15 @@
+// load the variables, colors and mixins
 @use "variables" as var;
 @use "colors" as c;
 @use "mixins" as m;
 
+// header styles
 header {
     @include m.flex_SPB();
     padding: var.$small-spacing;
     @include c.highlights();
 
+    // style the logo
     .logo {
 
         a {
@@ -14,11 +17,13 @@ header {
             font-size: var.$header-size-mobile;
         }
     }
-    
+
+    // style the nav links
     nav {
-        display: none;
+        display: none;  //set the nav display to none for mobile screen
     }
 
+    // style the search button
     .search {
         padding: var.$small-spacing;
     }
