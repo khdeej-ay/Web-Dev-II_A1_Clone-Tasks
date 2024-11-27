@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    /* prevents page from scrolling */
+    overflow: hidden;
+}
+
+body {
+    width: 90%;
+    margin: auto auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* adds a background image */
+    background-image: url("media/arcane-banner.png");
+    /* image covers container (without losing quality) */
+    background-size: cover;        
+    /* prevents background from repreating */
+    background-repeat: no-repeat;
+    /* positions image to the center of the container */
+    background-position: center center;
+}
+
+header {
+    padding-top: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto;
+}
+
+.logo h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    /* flex: 1; */
+}
+
+.links a {
+    font-size: 1.2rem;
+    padding: 0.6em 1em;
+    text-decoration: none;
+    color: azure;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.05rem;
+    color: azure;
+    padding-bottom: 0.6em;
+}
+
+footer a {
+    font-size: 1.05rem;
+    text-decoration: underline;
+    font-style: italic;
+    color: azure;
+}
