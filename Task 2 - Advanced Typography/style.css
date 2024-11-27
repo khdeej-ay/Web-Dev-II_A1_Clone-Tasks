@@ -83,7 +83,7 @@ main section .content button {
   }
   main {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     padding: 32px;
   }
